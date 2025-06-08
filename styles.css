@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar.scrolled {
+  background-color: #000;
+}
+
+.logo {
+  height: 30px;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.link:hover {
+  color: #e50914;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icons i {
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+.profile {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+}
+
+/* Hero Section */
+.hero {
+  height: 500px;
+  background: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400/8a6a68144592045.628efcd3e77b5.jpg") no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero-title {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero-text {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.hero-buttons {
+  display: flex;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.btn-play {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn-play:hover {
+  background-color: #ccc;
+}
+
+.btn-info {
+  background-color: #666;
+  color: #fff;
+}
+
+.btn-info:hover {
+  background-color: #555;
+}
+
+/* Movie Section */
+.movies {
+  padding: 20px 30px;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.movie-row {
+  display: flex;
+  overflow-x: auto;
+}
+
+.movie-card {
+  width: 200px;
+  height: 120px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.badge {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: #e50914;
+  color: #fff;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.card-info {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+
+.movie-card:hover .card-info {
+  display: block;
+}
+
+.card-title {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card-buttons {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.card-btn {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.card-btn:hover {
+  background-color: #ccc;
+}
+
+.card-tags {
+  display: flex;
+}
+
+.tag {
+  background-color: #666;
+  padding: 3px 5px;
+  margin-right: 5px;
+  font-size: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #000;
+  padding: 30px;
+  color: #666;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.social {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.social-link {
+  color: #666;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.social-link:hover {
+  color: #fff;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-col a {
+  color: #666;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer-col a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-btn {
+  background-color: transparent;
+  color: #666;
+  border: 1px solid #666;
+  padding: 5px 10px;
+}
+
+.service-btn:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.copyright {
+  font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero {
+    height: 300px;
+    padding: 15px;
+  }
+
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .hero-text {
+    font-size: 14px;
+  }
+
+  .movies {
+    padding: 15px;
+  }
+
+  .movie-card {
+    width: 150px;
+    height: 90px;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+}

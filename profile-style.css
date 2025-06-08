@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+/* Navbar */
+.nav {
+  background: #000;
+  padding: 10px 20px;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.nav-logo {
+  height: 25px;
+}
+
+.nav-menu {
+  margin-left: 20px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.nav-link:hover {
+  color: #e50914;
+}
+
+.nav-right {
+  margin-left: auto;
+}
+
+.nav-right i {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.nav-profile {
+  width: 25px;
+  height: 25px;
+}
+
+/* Profile Section */
+.profile {
+  padding: 80px 20px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile-top {
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin-right: 20px;
+}
+
+.profile-details h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.profile-details p {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.plan {
+  background: #e50914;
+  color: #fff;
+  padding: 5px;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.plan-type {
+  color: #999;
+  font-size: 12px;
+}
+
+/* Settings Section */
+.settings {
+  margin-top: 20px;
+}
+
+.settings h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.setting-box {
+  background: #333;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.setting-box h3 {
+  font-size: 16px;
+  display: inline;
+}
+
+.btn {
+  background: #000;
+  color: #999;
+  border: 1px solid #999;
+  padding: 5px 10px;
+  font-size: 12px;
+  float: right;
+}
+
+.btn:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.setting-box p {
+  color: #999;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .profile-pic {
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .profile-details {
+    text-align: center;
+  }
+
+  .plan {
+    display: block;
+    margin: 10px auto;
+    width: fit-content;
+  }
+}
